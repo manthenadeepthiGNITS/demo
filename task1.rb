@@ -26,7 +26,7 @@ def parse_dns(rec)
     k=precord.split
     #puts(k[0])
     #puts(k[1])
-    hsh[k[1].chop] = k[2]}
+    hsh[k[1].chop] = {:type=k[0],:target=k[2]}
   return(hsh)
 end
 
